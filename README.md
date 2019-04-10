@@ -27,6 +27,19 @@ MYSQL_DB_TEST=mydbtest
 
 ## Test
 
+For execute test you need create a table below:
+
+```
+CREATE DATABASE mydbtest;
+USE mydbtest;
+CREATE TABLE users (
+    id int(11) NOT NULL AUTO_INCREMENT,
+    name varchar(255) DEFAULT NULL,
+    email varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
 Run `npm test`
 
 ## Deploy
